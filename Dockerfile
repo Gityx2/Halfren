@@ -2,6 +2,6 @@ FROM alpine:3.10.1
 
 RUN apk add --update bash socat
 
-COPY tcp-proxy.sh /usr/bin/tcp-proxy
+COPY half-ren.sh /usr/bin/half-ren
 
-ENTRYPOINT ["tcp-proxy"]
+ENTRYPOINT ["half-ren"]
